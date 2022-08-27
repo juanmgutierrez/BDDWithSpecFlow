@@ -10,12 +10,18 @@
     <PackageReference Include="FluentAssertions" Version="6.7.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.0" />
     <PackageReference Include="SpecFlow.xUnit" Version="3.9.74" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\" />
     <Folder Include="Hooks\" />
-    <Folder Include="Steps\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BDDWithSpecFlow.Services\BDDWithSpecFlow.Services.csproj" />
   </ItemGroup>
 
 </Project>
